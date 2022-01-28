@@ -1,6 +1,3 @@
-
-transformDegree('40F')
-
 function transformDegree(degree) {
     const itsCelsius = degree.toUpperCase().includes('C') // para transformar caracteres em maisculo
     const itsFahrenheit = degree.toUpperCase().includes('F')
@@ -20,9 +17,6 @@ function transformDegree(degree) {
         formula = fahrenheit => (fahrenheit-32) * 5/9     
         degreeSign = 'C'    
     }
-
-
-
     return formula(updatedDegree) + degreeSign
 }
 
